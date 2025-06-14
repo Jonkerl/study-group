@@ -1,0 +1,42 @@
+.group-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin: 1rem;
+  max-width: 400px;
+}
+
+.group-card h3 {
+  margin-bottom: 0.5rem;
+  color: #004080;
+}
+
+.group-card p {
+  margin: 0.25rem 0;
+}
+.group-card button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  /* transition: background 0.2s; */
+}
+
+.join-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.join-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.leave-btn {
+  background-color: #dc3545;
+  color: white;
+}
+

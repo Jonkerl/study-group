@@ -1,0 +1,13 @@
+.course-filter {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.course-filter input {
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 400px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
