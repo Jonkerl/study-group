@@ -14,7 +14,7 @@ export default function ViewMyStudyGroup() {
 
   useEffect(()=>{
     
-    let myGroups = groups.filter(group => group.createdBy === userEmail);
+    let myGroups = groups.filter(group => group.members.includes(userEmail));
     
     const filteredGroups = myGroups.filter(group =>
       group.courseTitle.toLowerCase().includes(searchTerm.toLowerCase())

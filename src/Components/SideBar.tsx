@@ -33,7 +33,7 @@ export default function SideBar({isOpen, setIsOpen}: sideBarProps) {
           View Groups
         </Link>
         <Link to={"/view-groups/my?username=" + userEmail} onClick={closeSideBar}>
-          Created Groups
+          Your Groups
         </Link>
       </div>
     </div>
