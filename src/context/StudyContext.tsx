@@ -32,21 +32,21 @@ export const StudyContext = createContext<StudyContextType>({
 export const StudyContextProvider = ({ children }: { children: ReactNode }) => {
   const [groups, setGroups] = useState<StudyGroup[]>([])
   const [userGroups, setUserGroups] = useState<string[]>([])
-  const [userEmail, setUserEmail] = useState("john@campus.edu") 
+  const [userEmail, setUserEmail] = useState("john@campusedu") 
 
-  const createGroup = (course: string, time: string, location: string) => {
-    const newGroup: StudyGroup = {
-      id: `${course}-${Date.now()}`,
-      course,
-      time,
-      location,
-      members: [userEmail],
-      maxSize: 6
+    const createGroup = (course: string, time: string, location: string) => {
+      const newGroup: StudyGroup = {
+        id: `${course}-${Date.now()}`,
+        course,
+        time,
+        location,
+        members: [userEmail],
+        maxSize: 6
+      }
+
+      setGroups(prev => [...prev, newGroup])
+      setUserGroups(prev => [...prev, newGroup.id])
     }
-
-    setGroups(prev => [...prev, newGroup])
-    setUserGroups(prev => [...prev, newGroup.id])
-  }
 
   const joinGroup = (groupId: string) => {
     setGroups(prev =>
