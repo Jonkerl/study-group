@@ -3,13 +3,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Dashboard from './Layout/Dashboard'
 import Auth from './Layout/Auth'
-import ViewStudyGroup from './Pages/ViewStudyGroup'
-import Login from './Pages/Login'
-import Signup from './Pages/Signup'
+import ViewStudyGroup from './pages/ViewStudyGroup.tsx'
+import Login from './pages/Login.tsx'
+import Signup from './pages/Signup.tsx'
 import { StudyContextProvider } from './context/StudyContext'
 import UserContext from './context/UserContext'
-import MainHome from "./Pages/Home"
-import ViewMyStudyGroup from './Pages/ViewMyStudyGroup'
+import MainHome from "./pages/Home.tsx"
+import ViewMyStudyGroup from  './pages/ViewMyStudyGroup.tsx'
 
 //login and signup
 
