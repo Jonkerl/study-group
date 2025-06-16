@@ -1,7 +1,7 @@
 import { Outlet, useNavigate } from "react-router-dom";
 import { tokenStorage } from "../Utils/setup";
-import SideBar from "../Components/SideBar";
-import Main from "../Components/Main";
+import SideBar from "../components/SideBar";
+import Main from "../components/Main";
 import { IoMenuSharp } from "react-icons/io5";
 import {useAuth, useUser, } from "../Hooks/useUser";
 import { useEffect, useState } from "react";

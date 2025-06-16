@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
-import CourseFilter from "../Components/CourseFilter/CourseFilter";
+import CourseFilter from "../components/CourseFilter/CourseFilter";
 import { StudyContext, type StudyGroup } from "../context/StudyContext";
-import GroupCard from "../Components/GroupCard/GroupCard";
+import GroupCard from "../components/GroupCard/GroupCard";
 
 
 export default function ViewMyStudyGroup() {
