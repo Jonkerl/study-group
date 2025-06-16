@@ -10,7 +10,7 @@ const Home = () => {
   const [searchTerm, setSearchTerm] = useState("")
 
   const filteredGroups = groups.filter(group =>
-    group.course.toLowerCase().includes(searchTerm.toLowerCase())
+    group.courseTitle.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
   return (

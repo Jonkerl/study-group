@@ -1,6 +1,5 @@
 import { useContext } from "react";
-import { StudyContext } from "../../context/StudyContext";
-import type { StudyGroup } from "../../context/StudyContext";
+import { StudyContext, type StudyGroup } from "../../context/StudyContext";
 import "./GroupCard.css";
 
 type Props = {
@@ -15,7 +14,7 @@ const GroupCard = ({ group }: Props) => {
 
   return (
     <div className="group-card">
-      <h3>{group.course}</h3>
+      <h3>{group.courseTitle}</h3>
       <p>Time: {group.time}</p>
       <p>Location: {group.location}</p>
       <p>
@@ -23,7 +22,7 @@ const GroupCard = ({ group }: Props) => {
       </p>
 
       {isMember ? (
-        <button className="leave-btn" onClick={() => leaveGroup(group.id)}>
+        <button className="leave-btn" onClick={() => {leaveGroup(group.id); console.log("click leave")}}>
           Leave
         </button>
       ) : (
